@@ -189,6 +189,7 @@ input[type="checkbox"]:focus + label::before {
     }
     .container{
 	    min-height: 20vh;
+    }
     img{
         width: 100%;
     }
@@ -218,6 +219,7 @@ input[type="checkbox"]:focus + label::before {
     .timer ul{
         display: flex;
         justify-content: space-around;
+        text-align: center;
     }    
     .timer ul li{
         margin: 1.5vh;
