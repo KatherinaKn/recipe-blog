@@ -1,0 +1,172 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    display: block;
+    background-color: #f8f8f8;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    padding: 10vh 20vh;
+    max-width: 1300px;
+}
+.title-box{
+    margin-bottom: 2vh;    
+    border: 1.5px solid rgb(233, 121, 29);
+    border-bottom: none;
+    padding: 35px;
+}
+h1{
+    margin-bottom: 2vh;
+    color: #333;
+}
+.img-box{
+    margin: 7vh 0;
+}
+img{
+    object-fit: scale-down;
+    max-width: 100%;
+    height: auto;
+}
+.middle-box{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.timer{
+    width: auto;
+    height: fit-content;
+    align-content: center;
+    justify-content: center;
+    border: 1.5px solid rgb(235, 145, 72);
+    padding: 6.2vh 8vh;
+}
+.timer ul{
+    margin: 0;
+    padding: 30px 0;
+}
+.timer ul li{
+    margin: 3vh 2vh;
+    font-size: 3.5vh;
+    font-weight: bolder;
+}
+.ingredients{
+    border: 1.5px solid rgb(233, 121, 29);
+    padding: 25px 35px;
+}
+h3{
+    margin: 10px 0;
+    font-family: 'Playfair Display', serif;
+    font-weight: lighter;
+}
+.instructions{
+    padding-bottom: 10vh;
+    border-bottom: 1.5px solid rgb(233, 121, 29);;
+}
+.instructions h3{
+    text-decoration: underline;
+}
+.instructions ol li{
+    margin: 2vh;
+    font-size: 19px;
+}
+
+.instructions ol li i{
+    margin-top:1vh;
+}
+i{
+    margin-right: 2vh;
+    text-align: center;
+    vertical-align: center;
+    font-size: 3vh;
+    color: rgb(236, 157, 91);
+}
+.timer i:hover{
+    color: rgb(233, 121, 29);
+}
+p{
+    font-size: 20px;
+    margin: 1em 0;
+    padding: 0;
+}
+input[type="checkbox"] {
+    visibility: hidden;
+}
+label {
+    cursor: pointer;
+}
+input[type="checkbox"] + label:before {
+    border: 1px solid #333;
+    content: "\00a0";
+    display: inline-block;
+    font: 16px/1em sans-serif;
+    height: 16px;
+    margin: 0 .25em 0 0;
+    padding: 0;
+    vertical-align: top;
+    width: 16px;
+}
+
+input[type="checkbox"]:checked + label:before{
+    background: #fff;
+    color: #333;
+    content: "\2713";
+    text-align: center;
+}
+
+input[type="checkbox"]:checked + label:after {
+    font-weight: bold;
+}
+  
+input[type="checkbox"]:focus + label::before {
+      outline: rgb(59, 153, 252) auto 5px;
+}
+  footer{
+	margin-top: 20vh;
+	margin-bottom: 5vh;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	font-family: monospace;
+	font-size: 2.5vh;
+	color: rgb(233, 121, 29);
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        padding: 5vh 10vh;
+    }
+    
+    .title-box{  
+        border: none;
+        border-top: 1.5px solid rgb(233, 121, 29);
+        padding: 7.5vh 5vh;
+    }
+    .img-box{
+        margin: 0 0 5vh 0;
+    }
+    h1{
+        font-size: 4.5vh;
+    }
+    p{
+        font-size: 3.5vh;
+    }
+    .middle-box{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .ingredients{
+        order: 10;
+    }
+    .timer{
+        order: 1;
+        padding: 1.5vh auto;
+        margin-bottom: 2vh;
+    }
+    .timer ul{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+}
