@@ -181,4 +181,9 @@ input[type="checkbox"]:focus + label::before {
         margin: 1.5vh;
         font-size: 2vh;
     }
+	
+    input[type="checkbox"] + label:before {
+        vertical-align: center;
+    }
+}
 }
