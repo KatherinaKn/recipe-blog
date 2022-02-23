@@ -185,8 +185,10 @@ input[type="checkbox"]:focus + label::before {
     }
     .slider-container{
         
-    grid-template-columns: 25px 1fr 25px;
+   	grid-template-columns: 25px 1fr 25px;
     }
+    .container{
+	    min-height: 20vh;
     img{
         width: 100%;
     }
@@ -215,6 +217,7 @@ input[type="checkbox"]:focus + label::before {
     }
     .timer ul{
         display: flex;
+	text-align:center;
         justify-content: space-around;
     }    
     .timer ul li{
