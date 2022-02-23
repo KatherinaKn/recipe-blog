@@ -147,7 +147,7 @@ input[type="checkbox"]:focus + label::before {
         margin: 0 0 5vh 0;
     }
     img{
-        margin: 0 auto;
+	width:100%;
     }
     h1{
         font-size: 4.5vh;
@@ -156,6 +156,7 @@ input[type="checkbox"]:focus + label::before {
         font-size: 3.5vh;
     }
     .middle-box{
+	margin: 1vh;
         flex-direction: column;
         justify-content: center;
     }
