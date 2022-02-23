@@ -6,6 +6,7 @@ body{
     display: block;
     background-color: #f8f8f8;
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 .container{
     padding: 10vh 20vh;
@@ -135,39 +136,41 @@ input[type="checkbox"]:focus + label::before {
 
 @media screen and (max-width: 768px){
     .container{
-        padding: 3vh 1.5vh;
+        padding: 3vh 2vh;
     }
     
     .title-box{  
         border: none;
         border-top: 1.5px solid rgb(233, 121, 29);
-        padding: 7.5vh 3vh;
+        padding: 6vh 3vh 3vh 3vh;
     }
     .img-box{
         margin: 0 0 5vh 0;
     }
     img{
-	width:100%;
+        width: 100%;
     }
     h1{
         font-size: 4.5vh;
     }
     p{
-        font-size: 3.5vh;
+        font-size: 3vh;
     }
     .middle-box{
-	margin: 1vh;
+        margin: 1vh auto;
         flex-direction: column;
         justify-content: center;
+        max-width: 100%;
     }
     .ingredients{
         order: 10;
+        padding: 3vh;
     }
     .timer{
         padding: 0;
         order: 1;
         margin-bottom: 2vh;
-        width: fit-content;
+        width: auto;
     }
     .timer ul{
         display: flex;
@@ -176,6 +179,6 @@ input[type="checkbox"]:focus + label::before {
     }    
     .timer ul li{
         margin: 1.5vh;
-        font-size: 2.5vh;
+        font-size: 2vh;
     }
 }
