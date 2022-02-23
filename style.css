@@ -135,16 +135,19 @@ input[type="checkbox"]:focus + label::before {
 
 @media screen and (max-width: 768px){
     .container{
-        padding: 3vh 0;
+        padding: 3vh 1.5vh;
     }
     
     .title-box{  
         border: none;
         border-top: 1.5px solid rgb(233, 121, 29);
-        padding: 7.5vh 5vh;
+        padding: 7.5vh 3vh;
     }
     .img-box{
         margin: 0 0 5vh 0;
+    }
+    img{
+        margin: 0 auto;
     }
     h1{
         font-size: 4.5vh;
