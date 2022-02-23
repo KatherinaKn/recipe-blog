@@ -8,7 +8,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
-.container{
+.box-container{
     padding: 10vh 20vh;
     max-width: 1300px;
 }
@@ -24,6 +24,41 @@ h1{
 }
 .img-box{
     margin: 7vh 0;
+}
+.container{
+    min-height: 50vh;
+    max-width: 1300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slider-container{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    align-items: center;
+    gap: 1em;
+}
+.slider-body{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s;
+}
+.slider-body-show{
+    opacity:1;
+    pointer-events: unset;
+}
+.slider-img{
+    width: 100%;
+    object-fit: scale-down;
+    display: block;
+    margin: 0 auto;
+}
+.slider-arrow{
+    background: none;
+    cursor: pointer;
+    width: 90%;
+    border: none;
 }
 img{
     object-fit: scale-down;
@@ -62,7 +97,7 @@ h3{
     font-weight: lighter;
 }
 .instructions{
-    margin-top: 6vh;
+    margin-top: 4vh;
     padding-bottom: 10vh;
     border-bottom: 1.5px solid rgb(233, 121, 29);;
 }
@@ -136,7 +171,7 @@ input[type="checkbox"]:focus + label::before {
 }
 
 @media screen and (max-width: 768px){
-    .container{
+    .box-container{
         padding: 3vh 2vh;
     }
     
@@ -148,13 +183,16 @@ input[type="checkbox"]:focus + label::before {
     .img-box{
         margin: 0 0 5vh 0;
     }
+    .slider-container{
+        
+    grid-template-columns: 25px 1fr 25px;
+    }
     img{
         width: 100%;
     }
     h1{
         font-size: 4.5vh;
         text-transform: uppercase;
-	
     }
     p{
         font-size: 3vh;
@@ -177,8 +215,7 @@ input[type="checkbox"]:focus + label::before {
     }
     .timer ul{
         display: flex;
-        flex-direction: row;
-        text-align: center;
+        justify-content: space-around;
     }    
     .timer ul li{
         margin: 1.5vh;
@@ -187,7 +224,7 @@ input[type="checkbox"]:focus + label::before {
     
     input[type="checkbox"] + label:before {
         vertical-align: bottom;
-	margin: 0 0.25em 0.25em 0;
+    	margin: 0 0.25em 0.25em 0;
     }
     footer{
         font-size: 1.5vh;
