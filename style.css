@@ -217,7 +217,6 @@ input[type="checkbox"]:focus + label::before {
     }
     .timer ul{
         display: flex;
-	text-align:center;
         justify-content: space-around;
     }    
     .timer ul li{
