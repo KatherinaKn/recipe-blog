@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/png" href="icono.png">
 
     <title>Tarta de coco y dulce leche</title>
@@ -16,13 +16,42 @@
   </head>
   <body>
     <main>
-      <div class="container">
+      <div class="box-container">
         <div class="title-box">
           <h1>Tarta de coco y dulce de leche</h1>
           <p>La tarta de coco y dulce de leche es bastante típica en Argentina (como casi todo lo que lleva dulce de leche). En otros países es conocida como tarta de coco y cajeta y/o manjar. Es bastante dulce y para algunos puede resultar empalagosa, pero los que saben de cosas dulces piensan que es una delicia. </p>
         </div>
         <div class="img-box">
-          <img src="photo.png" alt="Tarta de coco y dulce de leche" longdesc="">
+           
+          <section class="slider">
+            <div class="slider-container container">
+              <button class="slider-arrow" id="before">
+                  <i class="fa-solid fa-angle-left"></i>
+              </button>
+  
+              <section class="slider-body slider-body-show" data-id="1">
+                <figure class="slider-picture">
+                  <img src="pics/coco.png" alt="coco" class="slider-img">
+                </figure>
+              </section>
+  
+              <section class="slider-body" data-id="2">
+                <figure class="slider-picture">
+                  <img src="pics/dulce.png" alt="" class="slider-img">
+                </figure>
+              </section>
+  
+              <section class="slider-body" data-id="3">
+                <figure class="slider-picture">
+                  <img src="pics/tarta.png" alt="" class="slider-img">
+                </figure>
+              </section>
+              
+              <button class="slider-arrow" id="next">
+                  <i class="fa-solid fa-angle-right"></i>
+              </button>
+            </div>
+          </section>
         </div>
         <div class="middle-box">
           <div class="ingredients">
@@ -90,5 +119,6 @@
 
     </main>
     <footer>Created by: Katherina Knaus<br>knauskatherina@outlook.com</footer>
+    <script src="slider.js"></script>
   </body>
 </html>
